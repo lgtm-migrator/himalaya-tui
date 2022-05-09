@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "himalaya-tui"
+version = "0.0.1"
+description = "A TUI for himalaya with Textual"
+authors = ["Jack Deng"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+textual = "^0.1.18"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.13.8"
+pre-commit = "^2.19.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
