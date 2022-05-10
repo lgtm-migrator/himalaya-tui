@@ -6,10 +6,9 @@ from textual.widgets import Placeholder
 class HimalayaTui(App):
     async def on_mount(self):
         await self.view.dock(Placeholder(), edge="left", size=40)
-        await self.view.dock(Placeholder(), Placeholder(), edge="top")
+        # await self.view.dock(Placeholder(), Placeholder(), edge="top")
 
-    async def on_load(self, event):
-        print(event)
+    async def on_load(self):
         await self.bind("q", "quit")
         await self.bind("r", "color('red')")
         await self.bind("g", "color('green')")
